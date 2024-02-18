@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Breakfast Cooking Procedure Documentation</h1>
+
+<p>Welcome to our comprehensive guide on preparing a delicious and satisfying breakfast! Whether you're a seasoned chef or a novice in the kitchen, this documentation will walk you through the step-by-step process of creating a classic breakfast featuring crispy bacon, perfectly toasted bread, and delightful sunny-side-up eggs.</p>
+
+<h2>Introduction</h2>
+<p>Our detailed procedure is designed to make your breakfast preparation seamless and enjoyable. From the initial preparation steps to the final assembly, each phase is carefully explained to help you achieve a mouthwatering result. To watch the content of the step simply press on the button to expand its content .</p>
+
+<button type="button" class="collapsible">Prerequisites</button>
+<div class="content">
+  <h3>Ingredients:</h3>
+  <p>Eggs, Bacon, Bread slices, Butter, Salt, Pepper</p>
+  <h3>Kitchen Tools:</h3>
+  <p>Frying pan, Spatula, Toaster, Knife, Cutting board</p>
+</div>
+
+<button type="button" class="collapsible">Procedure</button>
+<div class="content">
+
+  <h3>Step 1: Preparation</h3>
+  <button type="button" class="collapsible">1.1. Gather Ingredients</button>
+  <div class="content">
+    <p>Ensure all required ingredients are available and within reach.</p>
+  </div>
+
+  <button type="button" class="collapsible">1.2. Preheat Frying Pan</button>
+  <div class="content">
+    <p>Set the stove to medium heat and place the frying pan on it.</p>
+  </div>
+
+  <h3>Step 2: Cooking Bacon</h3>
+  <button type="button" class="collapsible">2.1. Place Bacon Strips</button>
+  <div class="content">
+    <p>Lay bacon strips in the preheated frying pan, ensuring they are evenly spaced.</p>
+  </div>
+
+  <button type="button" class="collapsible">2.2. Cook Bacon</button>
+  <div class="content">
+    <p>Allow bacon to cook for 3-5 minutes on each side or until desired crispiness is achieved.</p>
+  </div>
+
+  <button type="button" class="collapsible">2.3. Transfer Bacon</button>
+  <div class="content">
+    <p>Use a spatula to transfer cooked bacon to a plate lined with paper towels to absorb excess grease.</p>
+  </div>
+
+  <h3>Step 3: Toasting Bread</h3>
+  <button type="button" class="collapsible">3.1. Prepare Bread</button>
+  <div class="content">
+    <p>Place bread slices in the toaster, adjusting the settings for preferred toasting level.</p>
+  </div>
+
+  <button type="button" class="collapsible">3.2. Toast Bread</button>
+  <div class="content">
+    <p>Activate the toaster, toasting the bread until it reaches a golden brown color.</p>
+  </div>
+
+  <h3>Step 4: Cooking Eggs</h3>
+  <button type="button" class="collapsible">4.1. Butter the Pan</button>
+  <div class="content">
+    <p>Add a small amount of butter to the frying pan, spreading it evenly.</p>
+  </div>
+
+  <button type="button" class="collapsible">4.2. Crack Eggs</button>
+  <div class="content">
+    <p>Crack eggs into a bowl, ensuring no shell fragments are present.</p>
+  </div>
+
+  <button type="button" class="collapsible">4.3. Cook Eggs</button>
+  <div class="content">
+    <p>Carefully pour cracked eggs into the buttered pan.</p>
+  </div>
+
+  <button type="button" class="collapsible">4.4. Season Eggs</button>
+  <div class="content">
+    <p>Sprinkle salt and pepper over the eggs to taste.</p>
+  </div>
+
+  <button type="button" class="collapsible">4.5. Monitor Cooking</button>
+  <div class="content">
+    <p>Keep an eye on the eggs, adjusting heat if necessary. Cook until the egg whites are set, but the yolk remains runny for a classic sunny-side-up result.</p>
+  </div>
+
+  <h3>Step 5: Assembling Breakfast</h3>
+  <button type="button" class="collapsible">5.1. Plate Bacon</button>
+  <div class="content">
+    <p>Arrange the cooked bacon on a serving plate.</p>
+  </div>
+
+  <button type="button" class="collapsible">5.2. Place Toast</button>
+  <div class="content">
+    <p>Position the toasted bread slices alongside the bacon.</p>
+  </div>
+
+  <button type="button" class="collapsible">5.3. Serve Eggs</button>
+  <div class="content">
+    <p>Carefully lift the cooked eggs from the pan and place them on the plate.</p>
+  </div>
+
+  <button type="button" class="collapsible">5.4. Final Touch</button>
+  <div class="content">
+    <p>Optionally garnish with herbs or additional seasonings as desired.</p>
+  </div>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
+
+</html>
